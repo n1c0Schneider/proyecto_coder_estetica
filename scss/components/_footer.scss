@@ -1,0 +1,27 @@
+.footer{
+    background-color: $color-barras;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+
+    &__nav {
+        font-size: 20px;
+        color: #020659;
+    }
+
+    &__li {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    
+        &:hover {
+            font-size: 27px;
+            color: #3f3f3f;
+        }
+    }
+    &__map{
+        display:flex ;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
