@@ -94,4 +94,15 @@ img {
   gap: 1rem;
 }
 
+.contenedor {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- boostrap -->
-   <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-     -->
-     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Inicio</title>
 </head>
@@ -37,11 +37,11 @@
     </header>
 
     <main>
-        <div class="grid-contenedor">
+        <div class="contenedor">
             <h1>Inicio</h1>
             <!-- seccion 1 -->
-            <section class="tarjetas row-cosmetologia secciones">
-                <div class="contenido-tarjeta">
+            <section class="contenedor__tarjeta row-cosmetologia">
+                <div class="contenedor__contenido">
                     <h2>Cosmetologia</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
@@ -55,41 +55,41 @@
                     <div class="carousel-inner">
                         <!-- FOTO DESCRIPTIVA COSMETOLOGIA -->
                         <div class="carousel-item active">
-                            <img src="../img/MAQUILLAJE_1.jpg" class="d-block w-100 rounded-circle img-galeria"
+                            <img src="../img/MAQUILLAJE_1.jpg" class="d-block w-100 rounded-circle contenedor__img"
                                 alt="maquillaje_artistico_1">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- seccion 1 -->
-            <section class="tarjetas row-makeup secciones">
 
-                <div class="contenido-tarjeta">
+            <!-- seccion 2 -->
+            <section class="contenedor__tarjeta row-makeup">
+                <div class="contenedor__contenido">
                     <h2>Makeup</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
                         eos
-                        afsadfsdf architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt molestiae
+                        afsadfsdf architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt
+                        molestiae
                         inventore
                         ratione dolorum, maxime explicabo.
                     </p>
                 </div>
 
-                <div class="carousel slide carousel-fade" id="carousel-cosmetologia-inicio "
-                    data-ride="carousel">
+                <div class="carousel slide carousel-fade" id="carousel-cosmetologia-inicio " data-ride="carousel">
                     <div class="carousel-inner">
                         <!-- FOTO DESCRIPTIVA MAKEUP -->
                         <div class="carousel-item active">
-                            <img src="../img/MAQUILLAJE_2.jpg" class="d-block w-100 rounded-circle img-galeria"
+                            <img src="../img/MAQUILLAJE_2.jpg" class="d-block w-100 rounded-circle contenedor__img"
                                 alt="maquillaje_artistico_1">
                         </div>
                     </div>
                 </div>
 
             </section>
-            <!-- seccion 1 -->
-            <section class="tarjetas row-automaquillaje secciones">
-                <div class="contenido-tarjeta">
+            <!-- seccion 3 -->
+            <section class="contenedor__tarjeta row-automaquillaje">
+                <div class="contenedor__contenido">
                     <h2>Curso de Automaquillaje</h2>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
@@ -104,15 +104,15 @@
                     <div class="carousel-inner">
                         <!-- FOTO DESCRIPTIVA CURSO -->
                         <div class="carousel-item active">
-                            <img src="../img/MAQUILLAJE_3.jpg" class="d-block w-100 rounded-circle img-galeria"
+                            <img src="../img/MAQUILLAJE_3.jpg" class="d-block w-100 rounded-circle contenedor__img"
                                 alt="maquillaje_artistico_1">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <aside class="colum-novedades">
-                <div class="contenido-tarjeta">
+            <aside class="contenedor__novedades">
+                <div class="contendor__contenido">
                     <h3>Novedades</h3>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
@@ -131,16 +131,16 @@
     <footer class="footer">
 
         <div class="footer__redes">
-                <h3>Redes Sociales</h3>
-                <br>
-                <a href="https://www.instagram.com/anniomakeup/">
-                    <img class="footer__logo" src="./img/insta.png" alt="instagram" style="width:50px;height:50px;">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100063576790134">
-                    <img class="footer__logo" src="./img/face.png" alt="facebook" style="width:50px;height:50px;">
-                </a>
+            <h3>Redes Sociales</h3>
+            <br>
+            <a href="https://www.instagram.com/anniomakeup/">
+                <img class="footer__logo" src="./img/insta.png" alt="instagram" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063576790134">
+                <img class="footer__logo" src="./img/face.png" alt="facebook" style="width:50px;height:50px;">
+            </a>
         </div>
-        
+
         <div class="footer__nav">
             <ul>
                 <li class="footer__li"><a href="index.html">Inicio</a></li>
@@ -161,7 +161,9 @@
         </div>
 
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
- --></body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
 
 </html>
