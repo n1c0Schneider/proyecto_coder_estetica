@@ -1,0 +1,30 @@
+.contenedor{
+    &__tarjeta{
+    max-width: 1200px;
+    padding: 0.5rem;
+    flex-flow: column;
+    background-color: #f2b3b3;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    &__novedades{
+    background-color: #dededebe;
+    border-radius: 10px;
+    padding: 0.5rem;
+    }
+    &__contenido{
+        padding: 0.5rem;
+    }
+    &__img{
+        display: flex;
+        max-width:500px;
+        padding: 0.5rem;
+    }
+    &__contenido h2{
+        color:$color-letras;
+        font-family:fantasy;
+    }
+}

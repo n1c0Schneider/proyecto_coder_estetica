@@ -1,57 +1,20 @@
-.header {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #020659;
-    text-align: center;
-
-    &__logo {
-        padding: 1rem;
+.header{
+    &__logo{
         text-align: center;
     }
-
-    &__img {
-        width: 100%;
-        max-width: 300px;
-        object-fit: cover;
+    &__img{
+        width: 300px;
     }
-    &__nav {
+    &__nav{
         background-color: $color-barras;
     }
-    &__ul {
-        display: none;
-        background-color: $color-barras;
+    &__titulo{
+        color: $color-letras;
     }
-
-    input:checked~ul {
-        display: block;
+    &__li a:hover{
+        color:  #3f3f3f;;
     }
-
-    input {
-        display: none;
+    &__items{
+        color: $color-letras;
     }
-
-    &__burger {
-        background-color: $color-barras;
-        box-sizing: border-box;
-        display: inline-block;
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-    &:hover{
-        background-color: $color-contenido;
-    }
-    }
-
-    &__li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: 1px solid $color-contenido;
-    display: block;
-    padding: 10px;
-    }
-
-    
-    
 }
