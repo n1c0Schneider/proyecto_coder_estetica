@@ -2,29 +2,86 @@
     &__tarjeta{
     max-width: 1200px;
     padding: 0.5rem;
+    display: flex;
     flex-flow: column;
     background-color: #f2b3b3;
     border-radius: 10px; 
-    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    box-shadow: 2px 2px 10px;
     }
     &__novedades{
     background-color: #dededebe;
     border-radius: 10px;
     padding: 0.5rem;
+    box-shadow: 2px 2px 10px;
     }
     &__contenido{
-        padding: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom:1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        max-width:650px;
+    }
+    &__parrafo{
+        text-align: left;
+    }
+    &__parrafo-nov{
+        text-align: left;
+    }
+    &__galeria{
+        display: flex;
+        min-width: 300px;
+        max-width: 450px;
+        overflow:hidden;
+        
     }
     &__img{
-        display: flex;
-        max-width:500px;
-        padding: 0.5rem;
+        transition:all .7s ease-in-out;
+        
+        &:hover{  
+            -webkit-transform:scale(1.4);transform:scale(1.4);
+            
+        }
     }
     &__contenido h2{
         color:$color-letras;
         font-family:fantasy;
     }
+}
+
+@media(min-width:768px){
+    .contenedor{
+        background-color: aqua;
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "tarjeta1 tarjeta1 aside"
+        "tarjeta2 tarjeta2 aside"
+        "tarjeta3 tarjeta3 aside"
+        ;
+    & h1{
+        grid-area: titulo;
+    }
+    &__tarjeta1{
+        grid-area: tarjeta1;
+    }
+    &__tarjeta2{
+        grid-area: tarjeta2;
+    }
+    &__tarjeta3{
+        grid-area: tarjeta3;
+    }
+    &__novedades{
+        grid-area: aside;
+    }
+
+
+
+    }
+
+
+
+
 }

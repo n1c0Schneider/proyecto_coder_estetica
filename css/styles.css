@@ -64,39 +64,81 @@ img {
   flex-direction: column;
   gap: 1rem;
 }
-.footer__iframe {
-  border: solid #3f3f3f;
+.footer__iframe iframe {
+  border-radius: 10px;
 }
 
 .contenedor__tarjeta {
   max-width: 1200px;
   padding: 0.5rem;
+  display: flex;
   flex-flow: column;
   background-color: #f2b3b3;
   border-radius: 10px;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  box-shadow: 2px 2px 10px;
 }
 .contenedor__novedades {
   background-color: rgba(222, 222, 222, 0.7450980392);
   border-radius: 10px;
   padding: 0.5rem;
+  box-shadow: 2px 2px 10px;
 }
 .contenedor__contenido {
-  padding: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 650px;
+}
+.contenedor__parrafo {
+  text-align: left;
+}
+.contenedor__parrafo-nov {
+  text-align: left;
+}
+.contenedor__galeria {
+  display: flex;
+  min-width: 300px;
+  max-width: 450px;
+  overflow: hidden;
 }
 .contenedor__img {
-  display: flex;
-  max-width: 500px;
-  padding: 0.5rem;
+  transition: all 0.7s ease-in-out;
+}
+.contenedor__img:hover {
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 .contenedor__contenido h2 {
   color: #020659;
   font-family: fantasy;
 }
 
+@media (min-width: 768px) {
+  .contenedor {
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" "tarjeta1 tarjeta1 aside" "tarjeta2 tarjeta2 aside" "tarjeta3 tarjeta3 aside";
+  }
+  .contenedor h1 {
+    grid-area: titulo;
+  }
+  .contenedor__tarjeta1 {
+    grid-area: tarjeta1;
+  }
+  .contenedor__tarjeta2 {
+    grid-area: tarjeta2;
+  }
+  .contenedor__tarjeta3 {
+    grid-area: tarjeta3;
+  }
+  .contenedor__novedades {
+    grid-area: aside;
+  }
+}
 .contenedor {
   padding-top: 2rem;
   padding-bottom: 2rem;
