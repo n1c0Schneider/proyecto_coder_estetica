@@ -23,7 +23,7 @@
         <nav class="header__nav navbar navbar-expand-md ">
             <div class="container-fluid header__contenedor">
 
-                <a class="navbar-brand header__titulo" href="#">AnaOrradre</a>
+                <a class="navbar-brand header__titulo" href="./index.html">AnaOrradre</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -31,22 +31,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-lg-0">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 ">
                         <li class="nav-item header__li">
                             <a class="nav-link header__items" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item header__li">
-                            <a class="nav-link header__items" aria-current="page" href="./pages/cosmetologia.html">Cosmetologia</a>
+                            <a class="nav-link header__items" aria-current="page"
+                                href="./pages/cosmetologia.html">Cosmetologia</a>
                         </li>
                         <li class="nav-item header__li">
                             <a class="nav-link header__items" aria-current="page" href="./pages/makeup.html">Makeup</a>
                         </li>
                         <li class="nav-item header__li">
-                            <a class="nav-link header__items" aria-current="page" href="./pages/curso_automaquillaje.html">Cursos</a>
+                            <a class="nav-link header__items" aria-current="page"
+                                href="./pages/curso_automaquillaje.html">Cursos</a>
                         </li>
                         <li class="nav-item header__li">
-                            <a class="nav-link header__items" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link header__items" aria-current="page"
+                                href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
 
@@ -59,53 +62,30 @@
         <div class="contenedor">
             <h1>Inicio</h1>
             <!-- tarjeta 1 -->
-            <section class="contenedor__tarjeta row-cosmetologia">
+            <section class="contenedor__tarjeta1 row-cosmetologia">
                 <div class="contenedor__contenido">
                     <h2>Cosmetologia</h2>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
+                    <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                        excepturi vero ab accusamus
                         eos
                         architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt molestiae
                         inventore
                         ratione dolorum, maxime explicabo.
                     </p>
                 </div>
-                <div class="contenedor__img">
+                <div class="contenedor__galeria">
                     <img src="./img/MAQUILLAJE_1.jpg" class="contenedor__img rounded-circle" alt="foto1">
                 </div>
             </section>
 
             <!-- tarjeta 2 -->
-            <section class="contenedor__tarjeta row-makeup">
+            <section class="contenedor__tarjeta2 row-makeup">
                 <div class="contenedor__contenido">
                     <h2>Makeup</h2>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
-                        eos
-                        afsadfsdf architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt
-                        molestiae
-                        inventore
-                        ratione dolorum, maxime explicabo.
-                    </p>
-                </div>
-
-                <div class="carousel slide carousel-fade" id="carousel-cosmetologia-inicio " data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- FOTO DESCRIPTIVA MAKEUP -->
-                        <div class="carousel-item active">
-                            <img src="../img/MAQUILLAJE_2.jpg" class="d-block w-100 rounded-circle contenedor__img"
-                                alt="maquillaje_artistico_1">
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <!-- tarjeta 3 -->
-            <section class="contenedor__tarjeta row-automaquillaje">
-                <div class="contenedor__contenido">
-                    <h2>Curso de Automaquillaje</h2>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
+                    <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                        excepturi vero ab accusamus
                         eos
                         architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt molestiae
                         inventore
@@ -113,22 +93,38 @@
                     </p>
                 </div>
 
-                <div class="carousel slide carousel-fade" id="carousel-cosmetologia-inicio" data-ride="carousel">
-                    <div class="carousel-inner">
+                <div class="contenedor__galeria">
+                    <img src="../img/MAQUILLAJE_2.jpg" class="contenedor__img rounded-circle "
+                        alt="maquillaje_artistico_1">
+                </div>
+
+            </section>
+            <!-- tarjeta 3 -->
+            <section class="contenedor__tarjeta3 row-automaquillaje">
+                <div class="contenedor__contenido">
+                    <h2>Curso de Automaquillaje</h2>
+                    <br>
+                    <p class="contenedor__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                        excepturi vero ab accusamus
+                        eos
+                        architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt molestiae
+                        inventore
+                        ratione dolorum, maxime explicabo.
+                    </p>
+                </div>
                         <!-- FOTO DESCRIPTIVA CURSO -->
-                        <div class="carousel-item active">
-                            <img src="../img/MAQUILLAJE_3.jpg" class="d-block w-100 rounded-circle contenedor__img"
+                        <div class="contenedor__galeria">
+                            <img src="../img/MAQUILLAJE_3.jpg" class="contenedor__img rounded-circle "
                                 alt="maquillaje_artistico_1">
                         </div>
-                    </div>
-                </div>
             </section>
 
             <aside class="contenedor__novedades">
                 <div class="contendor__contenido">
                     <h3>Novedades</h3>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate excepturi vero ab accusamus
+                    <p class="contenedor_parrafo-nov">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cupiditate excepturi vero ab accusamus
                         eos
                         architecto deleniti assumenda debitis vel, sequi quaerat nisi tenetur incidunt molestiae
                         inventore
@@ -170,7 +166,7 @@
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.3408347626564!2d-64.38133109941575!3d-36.673127568748804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dd337a62ac1863%3A0xfa3b360b59aef1a7!2sAna%20Orradre%20Makeup%20and%20Beauty%20Studio!5e0!3m2!1ses-419!2sar!4v1688740004714!5m2!1ses-419!2sar"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    width="100%" height="100%"></iframe>
+                    width="400px" height="400px"></iframe>
             </div>
         </div>
 
