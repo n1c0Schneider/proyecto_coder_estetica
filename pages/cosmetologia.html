@@ -14,21 +14,44 @@
 
 <body>
     <header class="header">
-        <!-- logo  -->
-        <div class="logo-header">
-            <img src="..\img\logo.png" alt="logo" class="logo">
+        <div class="header__logo">
+            <img src="../img/logo.png" alt="logo" class="header__img">
         </div>
+        <nav class="header__nav navbar navbar-expand-md ">
+            <div class="container-fluid header__contenedor">
 
-        <nav class="nav-header">
-            <ul>
-                <li><a href="../index.html" class="nav-enlace">Inicio</a></li>
-                <li><a href="./cosmetologia.html" class="nav-enlace">Costmetologia</a></li>
-                <li><a href="./makeup.html" class="nav-enlace">Makeup</a></li>
-                <li><a href="./curso_automaquillaje.html" class="nav-enlace">Cursos de Automaquillaje</a></li>
-                <li><a href="./contacto.html" class="nav-enlace">Contacto</a></li>
-            </ul>
+                <a class="navbar-brand header__titulo" href="../index.html">AnaOrradre</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 ">
+                        <li class="nav-item header__li">
+                            <a class="nav-link header__items" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item header__li">
+                            <a class="nav-link header__items" aria-current="page"
+                                href="./cosmetologia.html">Cosmetologia</a>
+                        </li>
+                        <li class="nav-item header__li">
+                            <a class="nav-link header__items" aria-current="page" href="./makeup.html">Makeup</a>
+                        </li>
+                        <li class="nav-item header__li">
+                            <a class="nav-link header__items" aria-current="page"
+                                href="./curso_automaquillaje.html">Cursos</a>
+                        </li>
+                        <li class="nav-item header__li">
+                            <a class="nav-link header__items" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
         </nav>
-
     </header>
 
     <main>
@@ -120,36 +143,35 @@
     </div>
     <footer class="footer">
 
-        <div class="logo-redes">
+        <div class="footer__redes">
             <h3>Redes Sociales</h3>
             <br>
-            <div>
-                <a href="https://www.instagram.com/anniomakeup/">
-                    <img src="../img/insta.png" alt="instagram" style="width:50px;height:50px;">
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100063576790134">
-                    <img src="../img/face.png" alt="facebook" style="width:50px;height:50px;">
-                </a>
-            </div>
+            <a href="https://www.instagram.com/anniomakeup/">
+                <img class="footer__logo" src="../img/insta.png" alt="instagram" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063576790134">
+                <img class="footer__logo" src="../img/face.png" alt="facebook" style="width:50px;height:50px;">
+            </a>
         </div>
 
-        <nav class="nav-footer">
+        <div class="footer__nav">
             <ul>
-                <li><a href="../index.html" class="nav-enlace">Inicio</a></li>
-                <li><a href="./cosmetologia.html" class="nav-enlace">Costmetologia</a></li>
-                <li><a href="./makeup.html" class="nav-enlace">Makeup</a></li>
-                <li><a href="./curso_automaquillaje.html" class="nav-enlace">Cursos de Automaquillaje</a></li>
-                <li><a href="./contacto.html" class="nav-enlace">Contacto</a></li>
+                <li class="footer__li"><a href="../index.html">Inicio</a></li>
+                <li class="footer__li"><a href="./cosmetologia.html">Cosmetologia</a></li>
+                <li class="footer__li"><a href="./makeup.html">Makeup</a></li>
+                <li class="footer__li"><a href="./curso_automaquillaje.html">Cursos</a></li>
+                <li class="footer__li"><a href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
-        <div class="map">
+        <div class="footer__map">
             <h3>Encontranos</h3>
-            <br>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.3408347626564!2d-64.38133109941575!3d-36.673127568748804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dd337a62ac1863%3A0xfa3b360b59aef1a7!2sAna%20Orradre%20Makeup%20and%20Beauty%20Studio!5e0!3m2!1ses-419!2sar!4v1688740004714!5m2!1ses-419!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="footer__iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2230.3408347626564!2d-64.38133109941575!3d-36.673127568748804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95dd337a62ac1863%3A0xfa3b360b59aef1a7!2sAna%20Orradre%20Makeup%20and%20Beauty%20Studio!5e0!3m2!1ses-419!2sar!4v1688740004714!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="400px" height="400px"></iframe>
+            </div>
         </div>
 
     </footer>
