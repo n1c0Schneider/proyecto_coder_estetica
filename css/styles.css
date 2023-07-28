@@ -25,14 +25,27 @@ h1 {
   padding-top: 1rem;
 }
 
+body {
+  background-color: rgba(255, 255, 255, 0.945);
+  background-image: url("../img/logo.png");
+  background-size: 80px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+main {
+  background-color: rgba(244, 244, 244, 0.884);
+}
+
 .header__logo {
+  background-color: rgba(255, 255, 255, 0.918);
   text-align: center;
 }
 .header__img {
   width: 300px;
 }
 .header__nav {
-  background-color: #fcdbdb;
+  background-color: rgba(252, 219, 219, 0.9647058824);
 }
 .header__titulo {
   color: #020659;
@@ -45,7 +58,7 @@ h1 {
 }
 
 .footer {
-  background-color: #fcdbdb;
+  background-color: rgba(252, 219, 219, 0.9647058824);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -89,12 +102,11 @@ h1 {
   }
 }
 .contenedor__tarjeta {
-  max-width: 1200px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2b3b3;
+  background-color: rgba(242, 179, 179, 0.9803921569);
   border-radius: 10px;
   box-shadow: 2px 2px 10px;
 }
@@ -106,6 +118,9 @@ h1 {
 }
 .contenedor__contenido {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .contenedor__parrafo {
   text-align: left;
@@ -146,17 +161,85 @@ h1 {
   row-gap: 2rem;
 }
 .cont-cosmetologia__section {
-  background-color: #f2b3b3;
+  background-color: rgba(242, 179, 179, 0.9803921569);
   max-width: 1200px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f2b3b3;
+  background-color: rgba(242, 179, 179, 0.9803921569);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
+}
+.cont-cosmetologia__carousel {
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .cont-cosmetologia__section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .cont-cosmetologia__carousel {
+    width: 400px;
+  }
+  .cont-cosmetologia__carousel img {
+    height: 400px;
+    border-radius: 20px;
+  }
+}
+.cont-makeup {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  row-gap: 2rem;
+}
+.cont-makeup h1, .cont-makeup h3 {
+  text-align: center;
+}
+.cont-makeup__tarjeta {
+  background-color: rgba(241, 179, 243, 0.849);
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 2px 2px 10px;
 }
 
+@media (min-width: 768px) {
+  .cont-makeup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  .cont-makeup__tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+  }
+  .cont-makeup h1 {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  .cont-makeup__parrafo h2 {
+    text-align: center;
+  }
+  .cont-makeup__carousel {
+    max-width: 500px;
+  }
+  .cont-makeup__carousel img {
+    height: 500px;
+    border-radius: 20px;
+  }
+  .carousel-item img {
+    border-radius: 20px;
+  }
+}
 .contenedor {
   display: flex;
   flex-direction: column;
@@ -185,7 +268,6 @@ h1 {
 @media (min-width: 768px) {
   .contenedor {
     display: grid;
-    background-color: rgb(244, 244, 244);
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;

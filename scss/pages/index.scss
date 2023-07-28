@@ -27,7 +27,6 @@
 @media(min-width:768px){
     .contenedor{
         display: grid;
-        background-color: rgb(244, 244, 244);
         grid-template-columns:repeat(3,1fr);
         column-gap: 2rem;
         row-gap: 2rem;

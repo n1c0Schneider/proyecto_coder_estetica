@@ -18,4 +18,24 @@
     border-radius: 10px;
     box-shadow: 2px 2px 10px;
   }
+  &__carousel{
+    max-width: 400px;
+  }
+}
+
+@media(min-width:768px){
+  .cont-cosmetologia{
+    &__section{
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &__carousel{
+      width: 400px;
+      & img{
+        height: 400px;
+        border-radius: 20px;
+      }
+    }
+  }
+  
 }
