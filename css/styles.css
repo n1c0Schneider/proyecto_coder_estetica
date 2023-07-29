@@ -311,7 +311,7 @@ main {
   transform: rotateY(180deg);
   border-radius: 15px;
   padding: 1rem;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 @media (min-width: 768px) {
