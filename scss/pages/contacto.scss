@@ -1,0 +1,34 @@
+.cont-contacto{
+    background-color: $color-barras;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: $color-letras;
+
+    &__li a:hover{
+        font-size:x-large;
+        color: gray;
+    }
+    &__footer{
+    width: 25px;
+    background-color: $color-barras;
+    }
+}
+@media (min-width: 768px){
+   .cont-contacto{
+    flex-direction: row;
+    justify-content: space-around;
+
+
+    &__li a{
+        font-size:x-large;
+        &:hover{
+            font-size: xx-large;
+        }
+    }
+   }
+}

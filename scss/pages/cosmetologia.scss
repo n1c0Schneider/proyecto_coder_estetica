@@ -6,7 +6,14 @@
   padding-left: 2rem;
   padding-right: 2rem;
   row-gap: 2rem;
-  
+
+  &__tarjeta{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    padding: 1rem;
+
+  }
   &__section {
     background-color: $color-contenido;
     max-width: 1200px;
@@ -25,6 +32,7 @@
 
 @media(min-width:768px){
   .cont-cosmetologia{
+    
     &__section{
       flex-direction: row;
       align-items: flex-start;
