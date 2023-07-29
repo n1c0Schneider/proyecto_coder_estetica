@@ -311,7 +311,7 @@ main {
   transform: rotateY(180deg);
   border-radius: 15px;
   padding: 1rem;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 @media (min-width: 768px) {
@@ -329,7 +329,7 @@ main {
     max-width: 500px;
   }
   .tarjeta-giratoria__atras {
-    font-size: 1.2vw;
+    font-size: 1vw;
   }
   .tarj-1 {
     grid-row: 2;

@@ -34,7 +34,7 @@
         transform: rotateY(180deg);
         border-radius: 15px;
         padding: 1rem;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
 @media(min-width:768px){
@@ -52,7 +52,7 @@
     .tarjeta-giratoria{
         max-width: 500px;
         &__atras{
-            font-size: 1.2vw;
+            font-size: 1vw;
         }
 
     }
