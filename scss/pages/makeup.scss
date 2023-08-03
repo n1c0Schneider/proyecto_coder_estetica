@@ -22,7 +22,7 @@
         backface-visibility: hidden;
     }
     &__frente img{
-        border-radius: 15px;
+        border-radius: 5px;
     }
     &__atras{
         position: absolute;
@@ -32,7 +32,7 @@
         background-color: $color-barras;
         color:$color-letras;
         transform: rotateY(180deg);
-        border-radius: 15px;
+        border-radius: 5px;
         padding: 1rem;
         font-size: 3vw;
     }

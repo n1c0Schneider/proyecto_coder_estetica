@@ -1,8 +1,9 @@
 
-$blanco-transparente: rgba(255, 255, 255, 0.945);
+$blanco-transparente: rgba(255, 255, 255, 0.856);
 $color-letras: #020659;
 $color-barras: #fcdbdbf6;
-$color-contenido:#f2b3b3fa;
+$color-contenido:#ffffffdc;
+$color-gris:rgb(202, 202, 202);
 
 * {
     padding: 0;
@@ -27,12 +28,12 @@ h1{
     padding-top: 1rem;
 }
 body{
-  background-color: $blanco-transparente;
+  background-color: $color-contenido;
   background-image: url("../img/logo.png");
   background-size:80px;
   background-repeat: repeat;
   background-attachment:fixed;
 }
 main{
-    background-color: rgba(244, 244, 244, 0.884);
+    background-color: $blanco-transparente;
 }
